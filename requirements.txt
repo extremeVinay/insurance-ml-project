@@ -5,10 +5,11 @@ seaborn
 scikit-learn
 ipykernel
 catboost
-xgboost
+
 dill
 flask
 flask_cors
 lime
 catboost
--e .
+xgboost
+# -e .

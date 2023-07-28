@@ -1,0 +1,60 @@
+[ 2023-07-28 16:06:09,330 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+[ 2023-07-28 16:06:09,331 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-07-28 16:06:17,002 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:06:17] "GET / HTTP/1.1" 200 -
+[ 2023-07-28 16:06:51,954 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:06:51] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-28 16:07:29,378 ] 1414 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 48, in get_data_as_data_frame
+    "children":[self.children],
+AttributeError: 'CustomData' object has no attribute 'children'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 31, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 55, in get_data_as_data_frame
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py] line number [48] error message ['CustomData' object has no attribute 'children']
+[ 2023-07-28 16:07:29,386 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:07:29] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2023-07-28 16:11:56,063 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:11:56] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-28 16:14:07,057 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:14:07] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-28 16:14:09,381 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:14:09] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-28 16:14:11,830 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:14:11] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-28 16:14:18,148 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:14:18] "GET / HTTP/1.1" 200 -
+[ 2023-07-28 16:15:03,409 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:15:03] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-28 16:15:03,891 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:15:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-07-28 16:15:29,305 ] 1414 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 48, in get_data_as_data_frame
+    "children":[self.children],
+AttributeError: 'CustomData' object has no attribute 'children'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 31, in predict_datapoint
+    pred_df=data.get_data_as_data_frame()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 55, in get_data_as_data_frame
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py] line number [48] error message ['CustomData' object has no attribute 'children']
+[ 2023-07-28 16:15:29,312 ] 187 werkzeug - INFO - 127.0.0.1 - - [28/Jul/2023 16:15:29] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
