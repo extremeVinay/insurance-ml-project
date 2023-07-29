@@ -1,0 +1,54 @@
+[ 2023-07-29 16:55:46,724 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+[ 2023-07-29 16:55:46,725 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-07-29 16:55:55,251 ] 187 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2023 16:55:55] "GET / HTTP/1.1" 200 -
+[ 2023-07-29 16:55:59,179 ] 187 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2023 16:55:59] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-29 16:56:17,760 ] 1414 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 13, in predict
+    model_path=os.path.join("artifacts","model.pkl")
+NameError: name 'os' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 37, in predict_datapoint
+    expenses=predict_pipeline.predict(pred_df)
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 24, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py] line number [13] error message [name 'os' is not defined]
+[ 2023-07-29 16:56:17,767 ] 187 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2023 16:56:17] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2023-07-29 16:56:53,148 ] 187 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2023 16:56:53] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-07-29 16:56:56,127 ] 1414 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 13, in predict
+    try:
+NameError: name 'os' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\insurance\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 37, in predict_datapoint
+    expenses=predict_pipeline.predict(pred_df)
+  File "C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py", line 24, in predict
+    except Exception as e:
+src.exception.CustomException: Error occured in python script name [C:\Users\91807\Computer\Internship projects\Insurance Premium\src\pipeline\predict_pipeline.py] line number [13] error message [name 'os' is not defined]
+[ 2023-07-29 16:56:56,137 ] 187 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2023 16:56:56] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -

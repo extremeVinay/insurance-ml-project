@@ -1,3 +1,4 @@
 
-insurance/
-insuranceproject.egg-info/
+insurance/*
+insuranceproject.egg-info/*
+DOCS/*

@@ -1,3 +1,4 @@
+import os
 import sys
 import pandas as pd
 from src.exception import CustomException
@@ -34,7 +35,7 @@ class CustomData:
         self.age=age
         self.sex=sex
         self.bmi=bmi
-        self.chidren=children
+        self.children=children
         self.smoker=smoker
         self.region=region
 
