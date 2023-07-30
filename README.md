@@ -18,7 +18,14 @@ The purposes of this exercise to look into different features to observe their r
 
 
 # AWS Deployment(using CI-CD piplines) Link :
-http://44.202.83.52:8080/
-http://44.202.83.52:8080/predictdata
+1. http://44.202.83.52:8080/
+2. http://44.202.83.52:8080/predictdata
 
 ## Screenshots
+![30 07 2023_13 05 12_REC](https://github.com/extremeVinay/insurance-ml-project/assets/105208245/5f601ccc-9412-4680-840c-dc3d6277d5df)
+
+![30 07 2023_13 06 16_REC](https://github.com/extremeVinay/insurance-ml-project/assets/105208245/b2efb238-dad5-4f83-8271-3aa865aa86d9)
+
+![30 07 2023_13 04 41_REC](https://github.com/extremeVinay/insurance-ml-project/assets/105208245/0b305da0-37ce-421c-a8d9-7b73416347bf)
+
+
