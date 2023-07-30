@@ -16,6 +16,8 @@ Insurance.csv file is obtained from the Machine Learning course website (Spring 
 ## Inspiration
 The purposes of this exercise to look into different features to observe their relationship, and plot a multiple linear regression based on several features of individual such as age, physical/family condition and location against their existing medical expense to be used for predicting future medical expenses of individuals that help medical insurance to make decision on charging the premium.
 
+## Demo Video link
+https://youtu.be/cPIuMTkU_u0
 
 # AWS Deployment(using CI-CD piplines) Link :
 1. http://44.202.83.52:8080/
