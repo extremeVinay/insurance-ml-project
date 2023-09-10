@@ -1,8 +1,0 @@
-README.md
-setup.py
-insuranceproject.egg-info/PKG-INFO
-insuranceproject.egg-info/SOURCES.txt
-insuranceproject.egg-info/dependency_links.txt
-insuranceproject.egg-info/requires.txt
-insuranceproject.egg-info/top_level.txt
-src/__init__.py
