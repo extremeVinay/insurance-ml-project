@@ -5,7 +5,7 @@
   their individual health situation. After that, customers can work with any health 
   insurance carrier and its plans and perks while keeping the projected cost from our 
   study in mind. This can assist a person in concentrating on the health side of an   
-  insurance policy rather han the ineffective part.
+  insurance policy rather than the ineffective part.
 
 ## Context
 The insurance.csv dataset contains 1338 observations (rows) and 7 features (columns). The dataset contains 4 numerical features (age, bmi, children and expenses) and 3 nominal features (sex, smoker and region) that were converted into factors with numerical value designated for each level.
@@ -35,6 +35,11 @@ https://youtu.be/cPIuMTkU_u0
 ![30 07 2023_13 05 12_REC](https://github.com/extremeVinay/insurance-ml-project/assets/105208245/5f601ccc-9412-4680-840c-dc3d6277d5df)
 
 ![30 07 2023_13 06 16_REC](https://github.com/extremeVinay/insurance-ml-project/assets/105208245/b2efb238-dad5-4f83-8271-3aa865aa86d9)
+
+
+Power bi report link: https://app.powerbi.com/groups/me/reports/5dc00ee8-f951-4fbf-a71d-94356a3f7939/ReportSection64fdae91b940670841cb?experience=power-bi
+![Screenshot_2023-09-26_13-03-37](https://github.com/extremeVinay/insurance-ml-project/assets/105208245/304a8d80-de21-4977-b94d-19d41e1b0352)
+
 
 
 
